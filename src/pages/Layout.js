@@ -1,15 +1,18 @@
 import React from 'react';
-import  Outlet  from 'react-router-dom';
-import Navbar from '../cpmponents/Navbar';
+import { Outlet } from 'react-router-dom';
+import Header from '../cpmponents/Header';
+import Footer from '../cpmponents/Footer';
+
 
 function Layout() {
-  return (
-    <>
-   <Navbar />
-   <Outlet />
-   </>
+    return (
+        <>
+            <Header />
+            <Outlet />
+            <Footer />
+        </>
 
-  );
+    );
 }
 
 export default Layout;
